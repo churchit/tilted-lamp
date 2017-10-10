@@ -2,14 +2,15 @@
 @import "bootstrap/mixins";
 
 // Override Variables
-$brand-primary: #87b6c4;
-$brand-secondary: #f66d52;
-$brand-white: #ffffff;
-$brand-gray: #ccc;
-$brand-gray-alt: #7b7b7b;
+//Tommy wuz here
+$brand-primary: #87B6C4;
+$brand-secondary: #F66D52;
+$brand-white: #FFFFFF;
+$brand-gray: #CCCCCC;
+$brand-gray-alt: #7B7B7B;
 $brand-black: #000000;
-$brand-darker: #2e2e2e;
-$brand-lighter: #ebebeb;
+$brand-darker: #2E2E2E;
+$brand-lighter: #EBEBEB;
 
 @mixin transition($transition) {
     -moz-transition:    all $transition ease;
@@ -59,10 +60,18 @@ a {
 
 }
 #fh5co-header {
-	background: $brand-darker url(../images/hero_bg.jpg) no-repeat;  
-	background-size: cover;
 	color: $brand-white;
-	padding-top: 2em;
+	.bg {
+		background: $brand-darker url(../images/hero_bg.jpg) no-repeat;
+		background-size: cover;
+		padding:2em;
+
+	}
+	.bg-aio {
+		background: $brand-darker url(../images/hero_bg_aio.jpg) no-repeat;  
+		background-size: cover;
+		padding:2em;
+	}
 	.category {
 		display: block;
 		font-size: 15px;
@@ -172,7 +181,6 @@ a {
 		margin-bottom: 1em;
 		float: left;
 		width: 100%;
-		font-size: $font-sm-alt;
 	}
 }
 .fh5co-sidebox-links {
@@ -183,7 +191,6 @@ a {
 			list-style: none;
 			padding: 0;
 			margin: 0;
-			font-size: $font-sm-alt;
 			a {
 				float: left;
 				width: 100%;
@@ -281,12 +288,10 @@ a {
 		}
 	}
 	.fh5co-heading-intro {
-		font-size: $font-md;
 		font-weight: 300;
 		line-height: 1.7;
 		margin-bottom: 0;
 		@media screen and (max-width: $screen-sm) {
-			font-size: $font-sm;
 		}
 	}
 }
@@ -754,21 +759,17 @@ a {
 	border-bottom: 1px solid $brand-lighter;
 	text-align: center;
 	.quote-icon {
-		font-size: $font-lg;
 		margin: 0 auto 1em auto;
 		display: block;
 	}
 	.quote {
 		width: 70%;
 		margin: 0 auto;
-		font-size: $font-md;
 		cite {
 			margin-top: 20px;
 			display: block;
-			font-size: $font-sm;
 		}
 		@media screen and (max-width: $screen-sm) {
-			font-size: $font-sm;
 			width: 100%;
 
 		}
@@ -868,7 +869,6 @@ a {
 .form-control {
 	box-shadow: none;
 	border: 2px solid $brand-gray;
-	font-size: $font-sm;
 	height: 50px;
 	padding: 0 1em;
 	moz-border-radius: 30px;
