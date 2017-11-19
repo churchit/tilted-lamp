@@ -2,15 +2,14 @@
 @import "bootstrap/mixins";
 
 // Override Variables
-//Tommy wuz here
-$brand-primary: #87B6C4;
-$brand-secondary: #F66D52;
-$brand-white: #FFFFFF;
-$brand-gray: #CCCCCC;
-$brand-gray-alt: #7B7B7B;
+$brand-primary: #87b6c4;
+$brand-secondary: #f66d52;
+$brand-white: #ffffff;
+$brand-gray: #ccc;
+$brand-gray-alt: #7b7b7b;
 $brand-black: #000000;
-$brand-darker: #2E2E2E;
-$brand-lighter: #EBEBEB;
+$brand-darker: #2e2e2e;
+$brand-lighter: #ebebeb;
 
 @mixin transition($transition) {
     -moz-transition:    all $transition ease;
@@ -60,18 +59,11 @@ a {
 
 }
 #fh5co-header {
+	background: $brand-darker url(../images/hero_bg.jpg) no-repeat;  
+	background-position: center;
+	background-size: cover;
 	color: $brand-white;
-	.bg {
-		background: $brand-darker url(../images/hero_bg.jpg) no-repeat;
-		background-size: cover;
-		padding:2em;
-
-	}
-	.bg-aio {
-		background: $brand-darker url(../images/hero_bg_aio.jpg) no-repeat;  
-		background-size: cover;
-		padding:2em;
-	}
+	padding-top: 2em;
 	.category {
 		display: block;
 		font-size: 15px;
@@ -101,16 +93,21 @@ a {
 			text-transform: uppercase;
 		}
 	}
+
 	.fh5co-header-intro {
 		color: #fff;
 		font-size: 60px;
 		text-align: center;
-		padding: 4em 0 6em 0;
+		padding: 4.25em 0 5.75em 0;
 		font-weight: 300;
 		line-height: 1.5;
+		text-shadow: 0 0 24px #000000;
 
 		@media screen and(max-width: $screen-md) {
 			font-size: 30px;
+		}
+		span.fh5co-header-intro {
+			font-size:10px;
 		}
 	}
 }	
@@ -120,15 +117,33 @@ a {
 		padding: 1em 0 2em 0;
 	}	
 }
-
-
+#inner-page {
+	.cs1 {
+		background: $brand-darker url(../images/cs/cs1-hero.jpg) no-repeat;
+		background-position: center;
+	}
+}
+#inner-page {
+	.cs2 {
+		background: $brand-darker url(../images/cs/cs2-hero.jpg) no-repeat;
+		background-position: center;
+	}
+}
+#inner-page {
+	.cs3 {
+		background: $brand-darker url(../images/cs/cs3-hero.jpg) no-repeat;
+		background-position: center;
+	}
+}
 
 #fh5co-nav-slide {
 	display: none;
 	background: $brand-black;
 	color: $brand-white;
 	.fh5co-nav-inner {
+		overflow-y: scroll;
 		text-align: center;
+		padding: 2em 0;
 		position: relative;
 		ul {
 			padding: 0;
@@ -143,7 +158,6 @@ a {
 					float: left;
 					width: 100%;
 					padding: 10px 0;
-					border-bottom: 1px solid $brand-darker;
 					&:hover {
 						color: $brand-white;
 					}
@@ -181,6 +195,7 @@ a {
 		margin-bottom: 1em;
 		float: left;
 		width: 100%;
+		font-size: $font-sm-alt;
 	}
 }
 .fh5co-sidebox-links {
@@ -191,6 +206,7 @@ a {
 			list-style: none;
 			padding: 0;
 			margin: 0;
+			font-size: $font-sm-alt;
 			a {
 				float: left;
 				width: 100%;
@@ -288,10 +304,12 @@ a {
 		}
 	}
 	.fh5co-heading-intro {
+		font-size: $font-md;
 		font-weight: 300;
 		line-height: 1.7;
 		margin-bottom: 0;
 		@media screen and (max-width: $screen-sm) {
+			font-size: $font-sm;
 		}
 	}
 }
@@ -330,6 +348,7 @@ a {
 	float: left;
 	width: 100%;
 	position: relative;
+	padding-bottom: 3em;
 }
 .effects {
 	.hover-img {
@@ -397,7 +416,7 @@ a {
 			.goto-preview, .goto-details {
 				color: #fff;
 				font-size: 20px;
-				padding: 20px;
+				xpadding: 20px;
 			}
 		}
 
@@ -759,17 +778,21 @@ a {
 	border-bottom: 1px solid $brand-lighter;
 	text-align: center;
 	.quote-icon {
+		font-size: $font-lg;
 		margin: 0 auto 1em auto;
 		display: block;
 	}
 	.quote {
 		width: 70%;
 		margin: 0 auto;
+		font-size: $font-md;
 		cite {
 			margin-top: 20px;
 			display: block;
+			font-size: $font-sm;
 		}
 		@media screen and (max-width: $screen-sm) {
+			font-size: $font-sm;
 			width: 100%;
 
 		}
@@ -778,7 +801,7 @@ a {
 
 
 #fh5co-footer {
-	padding-bottom: 5em;
+	padding-bottom: 3em;
 }
 .fh5co-social-container {
 	margin-bottom: 3em;
@@ -869,6 +892,7 @@ a {
 .form-control {
 	box-shadow: none;
 	border: 2px solid $brand-gray;
+	font-size: $font-sm;
 	height: 50px;
 	padding: 0 1em;
 	moz-border-radius: 30px;

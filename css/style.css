@@ -3,23 +3,23 @@ body {
   font-size: 20px;
   line-height: 1.7;
   font-weight: 300;
-  color: #2E2E2E; }
+  color: #2e2e2e; }
   @media screen and (max-width: 768px) {
     body {
       font-size: 18px;
       line-height: 1.5; } }
 
 ::-webkit-selection {
-  color: #FFFFFF;
-  background: #2E2E2E; }
+  color: #ffffff;
+  background: #2e2e2e; }
 
 ::-moz-selection {
-  color: #FFFFFF;
-  background: #2E2E2E; }
+  color: #ffffff;
+  background: #2e2e2e; }
 
 ::selection {
-  color: #FFFFFF;
-  background: #2E2E2E; }
+  color: #ffffff;
+  background: #2e2e2e; }
 
 h1, h2, h3, h4, h5 {
   margin-bottom: .5em;
@@ -36,20 +36,16 @@ a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   a:hover, a:focus, a:active {
-    color: #87B6C4;
+    color: #87b6c4;
     text-decoration: none;
     outline: none; }
 
 #fh5co-header {
-  color: #FFFFFF; }
-  #fh5co-header .bg {
-    background: #2E2E2E url(../images/hero_bg.jpg) no-repeat;
-    background-size: cover;
-    padding: 2em; }
-  #fh5co-header .bg-aio {
-    background: #2E2E2E url(../images/hero_bg_aio.jpg) no-repeat;
-    background-size: cover;
-    padding: 2em; }
+  background: #2e2e2e url(../images/hero_bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 2em; }
   #fh5co-header .category {
     display: block;
     font-size: 15px;
@@ -60,7 +56,7 @@ a {
     z-index: 9999999;
     position: relative; }
   #fh5co-header .fh5co-header-bars {
-    color: #FFFFFF;
+    color: #ffffff;
     float: right;
     font-size: 22px;
     margin-top: 4px;
@@ -76,22 +72,39 @@ a {
     color: #fff;
     font-size: 60px;
     text-align: center;
-    padding: 4em 0 6em 0;
+    padding: 4.25em 0 5.75em 0;
     font-weight: 300;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-shadow: 0 0 24px #000000; }
     @media screen and (max-width: 992px) {
       #fh5co-header .fh5co-header-intro {
         font-size: 30px; } }
+    #fh5co-header .fh5co-header-intro span.fh5co-header-intro {
+      font-size: 10px; }
 
 #inner-page .fh5co-header-intro {
   padding: 1em 0 2em 0; }
 
+#inner-page .cs1 {
+  background: #2e2e2e url(../images/cs/cs1-hero.jpg) no-repeat;
+  background-position: center; }
+
+#inner-page .cs2 {
+  background: #2e2e2e url(../images/cs/cs2-hero.jpg) no-repeat;
+  background-position: center; }
+
+#inner-page .cs3 {
+  background: #2e2e2e url(../images/cs/cs3-hero.jpg) no-repeat;
+  background-position: center; }
+
 #fh5co-nav-slide {
   display: none;
   background: #000000;
-  color: #FFFFFF; }
+  color: #ffffff; }
   #fh5co-nav-slide .fh5co-nav-inner {
+    overflow-y: scroll;
     text-align: center;
+    padding: 2em 0;
     position: relative; }
     #fh5co-nav-slide .fh5co-nav-inner ul {
       padding: 0;
@@ -101,16 +114,15 @@ a {
         margin: 0;
         list-style: none; }
         #fh5co-nav-slide .fh5co-nav-inner ul li a {
-          color: #CCCCCC;
+          color: #ccc;
           display: block;
           float: left;
           width: 100%;
-          padding: 10px 0;
-          border-bottom: 1px solid #2E2E2E; }
+          padding: 10px 0; }
           #fh5co-nav-slide .fh5co-nav-inner ul li a:hover {
-            color: #FFFFFF; }
+            color: #ffffff; }
         #fh5co-nav-slide .fh5co-nav-inner ul li.active a {
-          color: #87B6C4; }
+          color: #87b6c4; }
 
 #fh5co-main {
   padding: 5em 0; }
@@ -125,7 +137,8 @@ a {
 #fh5co-sidebar .fh5co-side-box {
   margin-bottom: 1em;
   float: left;
-  width: 100%; }
+  width: 100%;
+  font-size: 12px; }
   #fh5co-sidebar .fh5co-side-box figure {
     margin-top: 10px;
     margin-bottom: .5em; }
@@ -139,11 +152,12 @@ a {
   .fh5co-sidebox-links ul li {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    font-size: 12px; }
     .fh5co-sidebox-links ul li a {
       float: left;
       width: 100%;
-      border-bottom: 1px solid #EBEBEB;
+      border-bottom: 1px solid #ebebeb;
       padding: .5em 0; }
 
 .fh5co-main-service {
@@ -157,11 +171,11 @@ a {
     -o-transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    color: #2E2E2E;
+    color: #2e2e2e;
     margin-top: 0; }
     .fh5co-main-service .fh5co-block-links .icon-circle {
       display: table;
-      background: #87B6C4;
+      background: #87b6c4;
       width: 100px;
       height: 100px;
       text-align: center;
@@ -177,18 +191,18 @@ a {
         display: table-cell;
         vertical-align: middle;
         font-size: 40px;
-        color: #FFFFFF; }
+        color: #ffffff; }
     .fh5co-main-service .fh5co-block-links h2 {
       font-size: 24px;
       font-weight: 300; }
     .fh5co-main-service .fh5co-block-links p {
-      color: #7B7B7B; }
+      color: #7b7b7b; }
     .fh5co-main-service .fh5co-block-links .learn-more {
       text-transform: uppercase;
       letter-spacing: .2em;
       font-size: 13px;
       display: inline-block;
-      background: #EBEBEB;
+      background: #ebebeb;
       padding: 7px 20px;
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
@@ -200,12 +214,12 @@ a {
     .csstransitions .fh5co-main-service .fh5co-block-links:hover {
       margin-top: -30px; }
     .fh5co-main-service .fh5co-block-links:hover .icon-circle {
-      background: #F66D52; }
+      background: #f66d52; }
       .csstransitions .fh5co-main-service .fh5co-block-links:hover .icon-circle {
         width: 120px;
         height: 120px; }
     .fh5co-main-service .fh5co-block-links:hover .learn-more {
-      background: #F66D52;
+      background: #f66d52;
       color: #fff; }
 
 .fh5co-heading {
@@ -222,15 +236,19 @@ a {
       display: block;
       height: 4px;
       width: 100px;
-      background: #87B6C4;
+      background: #87b6c4;
       position: absolute;
       bottom: 0;
       left: 50%;
       margin-left: -50px; }
   .fh5co-heading .fh5co-heading-intro {
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.7;
     margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .fh5co-heading .fh5co-heading-intro {
+        font-size: 12px; } }
 
 .fh5co-projects-list {
   margin: 0;
@@ -258,7 +276,8 @@ a {
 .fh5co-projects-wrap {
   float: left;
   width: 100%;
-  position: relative; }
+  position: relative;
+  padding-bottom: 3em; }
 
 .effects .hover-img {
   position: relative;
@@ -309,7 +328,7 @@ a {
       .effects .hover-img .fh5co-projects-overlay .from-top .category {
         display: block;
         font-size: 13px;
-        color: #CCCCCC;
+        color: #ccc;
         letter-spacing: .1em;
         padding-top: 5px; }
     .effects .hover-img .fh5co-projects-overlay .fh5co-projects-action {
@@ -324,7 +343,7 @@ a {
     .effects .hover-img .fh5co-projects-overlay .goto-preview, .effects .hover-img .fh5co-projects-overlay .goto-details {
       color: #fff;
       font-size: 20px;
-      padding: 20px; }
+      xpadding: 20px; }
   .effects .hover-img.hovered .fh5co-projects-overlay,
   .effects .hover-img.hovered .from-top,
   .effects .hover-img.hovered .fh5co-projects-action {
@@ -393,7 +412,7 @@ a {
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-next i,
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i {
-  color: #2E2E2E; }
+  color: #2e2e2e; }
 .owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i,
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-next:hover i,
@@ -426,7 +445,7 @@ a {
 .owl-theme .owl-dots .owl-dot span {
   width: 15px;
   height: 15px;
-  background: #87B6C4;
+  background: #87b6c4;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -434,11 +453,11 @@ a {
   border: 2px solid transparent; }
   .owl-theme .owl-dots .owl-dot span:hover {
     background: none;
-    border: 2px solid #F66D52; }
+    border: 2px solid #f66d52; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: none;
-  border: 2px solid #F66D52; }
+  border: 2px solid #f66d52; }
 
 #fh5co-workwithus {
   clear: both;
@@ -459,13 +478,13 @@ a {
       font-size: 40px; }
     #fh5co-workwithus .fh5co-workwithus-intro h3 {
       font-size: 20px;
-      color: #CCCCCC; }
+      color: #ccc; }
     #fh5co-workwithus .fh5co-workwithus-intro .has-btn-after {
       margin-bottom: 2em; }
 
 /* Helper Classes */
 .btn.btn-primary {
-  background: #87B6C4;
+  background: #87b6c4;
   color: #fff;
   border: none;
   box-shadow: none;
@@ -488,7 +507,7 @@ a {
   .btn.btn-primary.btn-effect:hover {
     box-shadow: none;
     color: #fff;
-    background: #F66D52; }
+    background: #f66d52; }
     .csstransitions .btn.btn-primary.btn-effect:hover {
       padding-right: 40px; }
     .csstransitions .btn.btn-primary.btn-effect:hover i {
@@ -497,7 +516,7 @@ a {
   .btn.btn-primary:hover {
     box-shadow: none;
     color: #fff;
-    background: #F66D52; }
+    background: #f66d52; }
   .btn.btn-primary:active, .btn.btn-primary:focus {
     box-shadow: none; }
 
@@ -544,10 +563,10 @@ a {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
   .fh5co-image-text .fh5co-block-links p {
-    color: #7B7B7B; }
+    color: #7b7b7b; }
   .fh5co-image-text .fh5co-block-links h2 {
     margin: 0;
-    color: #2E2E2E;
+    color: #2e2e2e;
     font-weight: 300;
     font-size: 24px;
     line-height: 1.5;
@@ -555,7 +574,7 @@ a {
   .fh5co-image-text .fh5co-block-links:active, .fh5co-image-text .fh5co-block-links:focus {
     outline: none; }
   .fh5co-image-text .fh5co-block-links .meta {
-    color: #CCCCCC;
+    color: #ccc;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: 16px;
@@ -570,7 +589,7 @@ a {
     letter-spacing: .2em;
     font-size: 13px;
     display: inline-block;
-    background: #EBEBEB;
+    background: #ebebeb;
     padding: 7px 20px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -580,7 +599,7 @@ a {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
   .fh5co-image-text .fh5co-block-links:hover .learn-more {
-    background: #F66D52;
+    background: #f66d52;
     color: #fff; }
   .csstransforms .fh5co-image-text .fh5co-block-links:hover img {
     -webkit-transform: scale(1.25);
@@ -596,24 +615,28 @@ a {
 #fh5co-testimonial {
   padding: 3em 0 7em 0;
   margin: 0;
-  background: #EBEBEB;
-  border-bottom: 1px solid #EBEBEB;
+  background: #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   text-align: center; }
   #fh5co-testimonial .quote-icon {
+    font-size: 18px;
     margin: 0 auto 1em auto;
     display: block; }
   #fh5co-testimonial .quote {
     width: 70%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 15px; }
     #fh5co-testimonial .quote cite {
       margin-top: 20px;
-      display: block; }
+      display: block;
+      font-size: 12px; }
     @media screen and (max-width: 768px) {
       #fh5co-testimonial .quote {
+        font-size: 12px;
         width: 100%; } }
 
 #fh5co-footer {
-  padding-bottom: 5em; }
+  padding-bottom: 3em; }
 
 .fh5co-social-container {
   margin-bottom: 3em; }
@@ -632,14 +655,14 @@ a {
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: .1em;
-      color: #7B7B7B; }
+      color: #7b7b7b; }
       .fh5co-social li a i {
         font-size: 14px;
-        color: #7B7B7B; }
+        color: #7b7b7b; }
       .fh5co-social li a:hover {
-        color: #87B6C4; }
+        color: #87b6c4; }
         .fh5co-social li a:hover i {
-          color: #87B6C4; }
+          color: #87b6c4; }
 
 #fh5co-subscribe {
   margin-bottom: 1em; }
@@ -662,32 +685,33 @@ a {
       moz-border-radius: 50%;
       webkit-border-radius: 50%;
       border-radius: 50%;
-      color: #CCCCCC;
+      color: #ccc;
       width: 40px;
       height: 40px;
-      background: #EBEBEB;
+      background: #ebebeb;
       opacity: 0;
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
       #fh5co-subscribe form .form-group .btn-subscribe:hover {
-        background: #F66D52;
+        background: #f66d52;
         color: #fff; }
     #fh5co-subscribe form .form-group.focus #subscribe-email {
-      border: 2px solid #87B6C4 !important; }
+      border: 2px solid #87b6c4 !important; }
     #fh5co-subscribe form .form-group.focus .btn-subscribe {
       opacity: 1;
-      background: #87B6C4;
+      background: #87b6c4;
       color: #fff;
       margin-right: -15px; }
       #fh5co-subscribe form .form-group.focus .btn-subscribe:hover {
-        background: #F66D52;
+        background: #f66d52;
         color: #fff; }
 
 .form-control {
   box-shadow: none;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #ccc;
+  font-size: 12px;
   height: 50px;
   padding: 0 1em;
   moz-border-radius: 30px;
@@ -699,7 +723,7 @@ a {
   transition: all 0.2s ease; }
   .form-control:focus, .form-control:active {
     box-shadow: none;
-    border: 2px solid #87B6C4; }
+    border: 2px solid #87b6c4; }
 
 #fh5co-footer-links {
   margin-bottom: 3em; }
@@ -719,13 +743,13 @@ a {
           float: left;
           width: 100%;
           font-size: 16px;
-          color: #7B7B7B; }
+          color: #7b7b7b; }
           #fh5co-footer-links .footer-links ul li a:hover {
-            color: #87B6C4; }
+            color: #87b6c4; }
 
 #fh5co-copyright p {
   font-size: 16px;
-  color: #7B7B7B; }
+  color: #7b7b7b; }
   #fh5co-copyright p small {
     font-size: 16px; }
 
@@ -735,7 +759,7 @@ a {
     margin-left: -5px; }
   .back-to-top span {
     display: block;
-    color: #CCCCCC;
+    color: #ccc;
     letter-spacing: .2em;
     text-transform: uppercase;
     text-align: center; }
@@ -745,7 +769,7 @@ a {
   text-transform: uppercase;
   letter-spacing: .3em;
   line-height: 1.5;
-  color: #7B7B7B; }
+  color: #7b7b7b; }
 
 .fh5co-visit {
   font-size: 14px;
@@ -753,7 +777,7 @@ a {
   letter-spacing: .3em;
   text-align: center;
   line-height: 1.5;
-  color: #7B7B7B;
+  color: #7b7b7b;
   display: block; }
   .fh5co-visit span {
     display: block;
@@ -779,7 +803,7 @@ a {
     .fh5co-pagination a i {
       text-align: center; }
     .fh5co-pagination a:hover {
-      color: #87B6C4; }
+      color: #87b6c4; }
 
 .fh5co-tile-image figure {
   width: 100%;
